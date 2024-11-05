@@ -1,0 +1,46 @@
+body {
+    background-image: url('/obrazki/obrazek6.jpg'); /* Tło dla całej strony */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.brand-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #ff9900;
+    padding-bottom: 20px;
+}
+
+.brand-section:last-child {
+    border-bottom: none;
+}
+
+.brand-logo {
+    width: 100px;
+    height: auto;
+}
+
+.brand-details {
+    flex: 1;
+}
+
+.brand-details h2 {
+    color: #ffff00; /* Żółty kolor dla nagłówków marek */
+    font-size: 1.8em;
+    margin-top: 0;
+}
