@@ -1,0 +1,138 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-top: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Styl zegarka i daty */
+#zegarek, #data {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: #333;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#data {
+    top: 60px; /* Przesunięcie daty poniżej zegara */
+    font-size: 18px;
+    color: #666;
+}
+
+/* Styl dla przycisków zmiany koloru */
+.color-buttons {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.color-buttons button {
+    margin-bottom: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 14px;
+}
+
+.color-buttons button:hover {
+    opacity: 0.9;
+}
+
+.yellow { background-color: #FFFF00; color: #333; }
+.black { background-color: #000000; }
+.white { background-color: #FFFFFF; color: #333; border: 1px solid #ccc; }
+.green { background-color: #00FF00; color: #333; }
+.blue { background-color: #0000FF; }
+.orange { background-color: #FF8800; }
+.gray { background-color: #C0C0C0; color: #333; }
+.red { background-color: #FF0000; }

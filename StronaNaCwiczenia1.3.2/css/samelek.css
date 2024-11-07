@@ -1,0 +1,42 @@
+body {
+    background-image: url('/obrazki/obrazek9.jpg'); /* Tło dla całej strony */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+h1 {
+    color: #ff9900;
+    text-align: center;
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.highlight {
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+.section-title {
+    color: #ffff00;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
