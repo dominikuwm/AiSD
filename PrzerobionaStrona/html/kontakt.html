@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- Link the JavaScript files -->
+    <script src="/js/timedate.js" type="text/javascript"></script>
+    <script src="/js/kolortlo.js" type="text/javascript"></script>
+</head>
+<body class="kontakt-page" onload="startclock()">
+
+    <div class="image-container">
+        <img src="/obrazki/obrazek5.jpg" alt="Japońskie samochody" class="header-image">
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="/html/index.html">Strona Główna</a></li>
+            <li><a href="/html/kontakt.html">Kontakt</a></li>
+            <li><a href="/html/historia.html">Historia japońskich samochodów</a></li>
+            <li><a href="/html/popmar.html">Najpopularniejsze marki</a></li>
+            <li><a href="/html/motorsport.html">Motorsport i tuning</a></li>
+            <li><a href="/html/samelek.html">Samochody elektryczne i hybrydowe</a></li>
+            <li><a href="/html/lab3.html">Lab 3</a></li>
+        </ul>
+    </nav>
+
+    <div class="kontakt-container">
+        <h1 class="kontakt-title">Kontakt</h1>
+        <form class="kontakt-form">
+            <label for="name">Imię:</label>
+            <input type="text" id="name" name="name" class="kontakt-input" placeholder="Wpisz swoje imię" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" class="kontakt-input" placeholder="Wpisz swój e-mail" required>
+
+            <label for="message">Wiadomość:</label>
+            <textarea id="message" name="message" class="kontakt-textarea" rows="5" placeholder="Wpisz swoją wiadomość" required></textarea>
+
+            <button type="submit" class="kontakt-button">Wyślij</button>
+        </form>
+    </div>
+
+    <!-- Sidebar for Color Picker and Clock -->
+    <div class="sidebar">
+        <div class="color-buttons">
+            <h3>Wybierz Kolor Tła:</h3>
+            <button class="color-button" style="background-color: #ff0000;" onclick="changeBackground('#ff0000')">Czerwony</button>
+            <button class="color-button" style="background-color: #00ff00;" onclick="changeBackground('#00ff00')">Zielony</button>
+            <button class="color-button" style="background-color: #0000ff;" onclick="changeBackground('#0000ff')">Niebieski</button>
+            <button class="color-button" style="background-color: #f4f4f4;" onclick="changeBackground('#f4f4f4')">Domyślny</button>
+        </div>
+        <div class="clock">
+            <h3>Aktualny Czas:</h3>
+            <div id="zegarek"></div> <!-- Clock display -->
+            <h3>Aktualna Data:</h3>
+            <div id="data"></div> <!-- Date display -->
+        </div>
+    </div>
+
+</body>
+</html>
